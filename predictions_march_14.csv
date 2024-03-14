@@ -1,0 +1,6 @@
+,"""nameTeam""",slugOpponent,slugTeam,firstscore,firstup,firstlow,secondscore,secondup,secondlwr,total_pred,total_pred_lwr,total_pred_up,ML,Spread,Model ML,Model Spread,Over/Under,Model Total,Bet,W/L
+1,nameTeam,BOS,PHX,115,135,94,108,128,88,223,182,263,-225,6.0,BOS,6,227.0,223,,
+2,nameTeam,HOU,WAS,115,135,95,106,127,86,221,181,262,-325,7.5,HOU,8,226.5,221,10,
+3,nameTeam,MIL,PHI,95,115,74,97,117,76,191,151,232,-325,7.5,PHI,2,220.0,191,,
+4,nameTeam,OKC,DAL,125,146,105,123,143,102,248,207,288,-525,11.0,OKC,3,235.5,248,10,
+5,nameTeam,POR,NYK,93,114,73,98,119,78,192,151,232,400,10.5,NYK,5,205.5,192,10,
