@@ -1,3 +1,5 @@
+library(rvest)
+
 url <- "https://www.basketball-reference.com/leagues/NBA_2024_games-march.html"
 webpage <- read_html(url)
 nba_games_df <- webpage %>% html_table(header = TRUE, fill = TRUE) %>% .[[1]]

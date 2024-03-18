@@ -1,0 +1,6 @@
+,HomeAbbrv,home_team,AwayAbbrv,away_team,HomeScore,AwayScore,total_pred,line,outcomes_point,Line_Pred_diff,Bet_Over_Under,Bet,Retuned
+1,CHA,Charlotte Hornets,PHX,Phoenix Suns,113.6548984,115.9806097,229.6355082,1.87,217.5,12.13550816,Over,10,0
+2,DET,Detroit Pistons,MIA,Miami Heat,100.707915,108.730393,209.438308,1.93,215.5,6.061691988,Under,,
+3,SAS,San Antonio Spurs,DEN,Denver Nuggets,113.7267857,121.4342678,235.1610536,1.89,222.5,12.66105358,Over,10,0
+4,TOR,Toronto Raptors,ORL,Orlando Magic,98.28664293,105.399037,203.6856799,1.87,217,13.31432007,Under,10,21
+5,UTA,Utah Jazz,ATL,Atlanta Hawks,114.1364093,112.2982499,226.4346592,1.89,223,3.434659243,Over,,
