@@ -90,7 +90,7 @@ odds_join <- merge(predictions, odds_total_nba_join,
                    by.x = c("slugOpponent", "slugTeam"),
                    by.y = c("slugTeam.x", "slugTeam.y"), all.x = T)
 
-odds_join_export <- odds_join %>% select(slugOpponent, home_team,slugTeam, away_team, firstscore_rf, 
+odds_join_export_2 <- odds_join %>% select(slugOpponent, home_team,slugTeam, away_team, firstscore_rf, 
                                          secondscore_rf, total_pred_rf, outcomes_price, outcomes_point) %>%
   rename(HomeAbbrv = slugOpponent,
          AwayAbbrv = slugTeam,
@@ -99,9 +99,9 @@ odds_join_export <- odds_join %>% select(slugOpponent, home_team,slugTeam, away_
          over_odds = outcomes_price,
          line = outcomes_price)
 
-odds_join_export$Line_Pred_diff = abs(odds_join_export$total_pred - odds_join_export$outcomes_point)
-odds_join_export$Bet_Over_Under = ifelse(odds_join_export$total_pred > odds_join_export$outcomes_point, "Over", "Under")
-write.csv(odds_join_export, file = paste(Sys.Date(), "predictions_rf.csv", sep = "_"))
+odds_join_export_2$Line_Pred_diff = abs(odds_join_export_2$total_pred - odds_join_export_2$outcomes_point)
+odds_join_export_2$Bet_Over_Under = ifelse(odds_join_export_2$total_pred > odds_join_export_2$outcomes_point, "Over", "Under")
+write.csv(odds_join_export_2, file = paste(Sys.Date(), "predictions_rf.csv", sep = "_"))
 
 
 
