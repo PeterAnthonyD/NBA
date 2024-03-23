@@ -1,0 +1,8 @@
+"","HomeAbbrv","home_team","AwayAbbrv","away_team","HomeScore","AwayScore","total_pred_rf","line","outcomes_point","Line_Pred_diff","Bet_Over_Under"
+"1","DAL","Dallas Mavericks","UTA","Utah Jazz",112.94490257649,109.707740740741,222.65264331723,1.91,237.5,14.8473566827697,"Under"
+"2","DEN","Denver Nuggets","NYK","New York Knicks",100.593261904762,105.262,205.855261904762,1.91,208,2.1447380952381,"Under"
+"3","HOU","Houston Rockets","CHI","Chicago Bulls",114.263555555556,114.050861227661,228.314416783217,1.89,218.5,9.81441678321676,"Over"
+"4","MIL","Milwaukee Bucks","BKN","Brooklyn Nets",110.976574074074,106.338549019608,217.315123093682,1.93,220.5,3.1848769063181,"Under"
+"5","ORL","Orlando Magic","NOP","New Orleans Pelicans",109.70484045584,110.580955831608,220.285796287448,1.93,207.5,12.7857962874484,"Over"
+"6","PHX","Phoenix Suns","ATL","Atlanta Hawks",109.795185185185,109.271939153439,219.067124338624,1.93,226,6.93287566137565,"Under"
+"7","WAS","Washington Wizards","SAC","Sacramento Kings",113.048739130435,118.808333333333,231.857072463768,1.91,237.5,5.64292753623187,"Under"

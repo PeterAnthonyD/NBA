@@ -16,43 +16,26 @@ nba_games$pointsAgainst <- nba_games$ptsTeam - nba_games$plusminusTeam
 nba_games <- nba_games %>%
   arrange(dateGame) %>%  # Replace 'date_column' with the actual date column
   group_by(nameTeam) %>%
-  mutate(last_five = zoo::rollmean(ptsTeam, k = 5, fill = NA, align = "right"))
-
-nba_games <- nba_games %>%
-  arrange(dateGame) %>%  # Replace 'date_column' with the actual date column
-  group_by(nameTeam) %>%
-  mutate(last_five_against = zoo::rollmean(pointsAgainst, k = 5, fill = NA, align = "right"))
-
-nba_games <- nba_games %>%
-  arrange(dateGame) %>%  # Replace 'date_column' with the actual date column
-  group_by(nameTeam) %>%
-  mutate(fgperc_lastfive = zoo::rollmean(pctFGTeam, k = 5, fill = NA, align = "right"),
-         lastgame_over_lastfive = ifelse(lag(ptsTeam) > lag(last_five), 1, 0)) 
-
-nba_games <- subset(nba_games, !is.na(nba_games$lastgame_over_lastfive))
-
-nba_games <- nba_games %>%
-  arrange(dateGame) %>%  # Replace 'date_column' with the actual date column
-  group_by(nameTeam) %>%
-  mutate(cumulative_sum = cumsum(lastgame_over_lastfive))
-
-nba_games <- nba_games %>%
-  mutate(cumulative_sum = ifelse(lastgame_over_lastfive == 1, cumulative_sum, 0))
-
+  mutate(last_five = zoo::rollmean(ptsTeam, k = 5, fill = NA, align = "right"),
+         last_ten = zoo::rollmean(ptsTeam, k = 10, fill = NA, align = "right"),
+         last_five_against = zoo::rollmean(pointsAgainst, k = 5, fill = NA, align = "right"),
+         last_ten_against = zoo::rollmean(ptsTeam, k = 10, fill = NA, align = "right"))
 
 nba_quickModle<-lm(ptsTeam ~ as.factor(slugTeam) + 
-                     as.factor(slugOpponent) + 
+                     as.factor(slugOpponent) +
                      last_five +
-                     last_five_against +
-                     lastgame_over_lastfive +
-                     cumulative_sum,
-                     as.factor(locationGame) + 
-                     #fgperc_lastfive, 
+                     last_five_against,
+                     #lastgame_over_lastfive +
+                     #cumulative_sum +
+                     #factor(locationGame),
+                     #last_ten +
+                     #last_ten_against,
                    data = nba_games)
 summary(nba_quickModle)
 
 nba_teams_lookup <- nba_games %>% select(slugTeam, nameTeam, last_five, dateGame, last_five_against, 
-                                         fgperc_lastfive, lastgame_over_lastfive, cumulative_sum)
+                                         last_ten, 
+                                           last_ten_against)
 nba_teams_lookup <- nba_teams_lookup %>%
   group_by(nameTeam) %>%
   filter(dateGame == max(dateGame))
@@ -83,8 +66,9 @@ nba_gamees_today_home_join <- stringdist_join(nba_gamees_today_home_join, nba_te
   slice_min(order_by = dist, n = 1)
 
 nba_gamees_today_home_join <- nba_gamees_today_home_join %>% select(HomeAbbriv,
-                                                                    slugTeam, last_five, last_five_against, fgperc_lastfive,
-                                                                    lastgame_over_lastfive, cumulative_sum)
+                                                                    slugTeam, last_five, last_five_against,
+                                                                    last_ten, 
+                                                                    last_ten_against)
 
 nba_gamees_today_home_join <- nba_gamees_today_home_join %>% rename(slugOpponent = slugTeam)
 nba_gamees_today_home_join  <- nba_gamees_today_home_join %>% rename(slugTeam = HomeAbbriv)

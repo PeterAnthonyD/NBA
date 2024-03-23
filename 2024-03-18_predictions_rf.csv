@@ -1,0 +1,9 @@
+,HomeAbbrv,home_team,AwayAbbrv,away_team,HomeScore,AwayScore,total_pred_rf,line,outcomes_point,Line_Pred_diff,Bet_Over_Under,Actual Home,Actual Away,Total,
+1,BOS,Boston Celtics,DET,Detroit Pistons,113.592,106.0013605,219.5933605,1.91,223,3.406639535,Under,119,94,213,
+2,CHI,Chicago Bulls,POR,Portland Trail Blazers,109.2694444,107.5668911,216.8363356,1.91,213.5,3.336335572,Over,110,107,217,
+3,GSW,Golden State Warriors,NYK,New York Knicks,100.065,101.7750895,201.8400895,1.91,211.5,9.659910534,Under,112,119,231,
+4,IND,Indiana Pacers,CLE,Cleveland Cavaliers,112.151451,111.6095003,223.7609513,1.91,225,1.23904874,Under,103,108,211,
+5,LAL,Los Angeles Lakers,ATL,Atlanta Hawks,110.6225079,113.8702222,224.4927302,1.91,225,0.507269841,Under,136,105,241,
+6,PHI,Philadelphia 76ers,MIA,Miami Heat,101.6999476,104.843,206.5429476,1.89,208.5,1.95705245,Under,98,91,189,
+7,SAC,Sacramento Kings,MEM,Memphis Grizzlies,107.6344736,106.297368,213.9318416,1.91,221,7.068158404,Under,121,111,232,OT
+8,UTA,Utah Jazz,MIN,Minnesota Timberwolves,108.6403448,118.575209,227.2155538,1.89,223.5,3.715553792,Over,104,114,218,

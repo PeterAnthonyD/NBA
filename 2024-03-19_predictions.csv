@@ -1,0 +1,6 @@
+,HomeAbbrv,home_team,AwayAbbrv,away_team,HomeScore,AwayScore,total_pred,line,outcomes_point,Line_Pred_diff,Bet_Over_Under,Home,Away,Total
+1,BKN,Brooklyn Nets,NOP,New Orleans Pelicans,106.24816,110.1639575,216.4121175,1.93,216.5,0.087882502,Under,91,104,195
+2,MIN,Minnesota Timberwolves,DEN,Denver Nuggets,113.1804765,110.0294287,223.2099052,1.91,213,10.20990521,Over,,,0
+3,ORL,Orlando Magic,CHA,Charlotte Hornets,104.3881948,97.469966,201.8581608,1.93,202.5,0.641839215,Under,112,92,204
+4,SAS,San Antonio Spurs,DAL,Dallas Mavericks,123.0089921,124.8775308,247.8865229,1.91,233.5,14.38652292,Over,113,107,220
+5,WAS,Washington Wizards,HOU,Houston Rockets,115.2264742,124.0287006,239.2551748,1.93,227.5,11.75517477,Over,114,137,251

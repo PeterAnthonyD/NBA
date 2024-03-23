@@ -1,8 +1,8 @@
-,HomeAbbrv,home_team,AwayAbbrv,away_team,HomeScore,AwayScore,total_pred,line,outcomes_point,Line_Pred_diff,Bet_Over_Under,Bet,
-1,DAL,Dallas Mavericks,DEN,Denver Nuggets,97.30351322,103.6538149,200.9573282,1.89,229,28.04267185,Under,25,46.73
-2,DET,Detroit Pistons,MIA,Miami Heat,86.25296817,95.57581799,181.8287862,1.93,214,32.17121384,Under,25,47.72
-3,LAC,Los Angeles Clippers,ATL,Atlanta Hawks,114.1229249,105.626389,219.7493139,1.89,221,1.25068613,Under,,
-4,MIL,Milwaukee Bucks,PHX,Phoenix Suns,115.9446772,117.1436935,233.0883707,1.93,229,4.088370717,Over,,
-5,ORL,Orlando Magic,TOR,Toronto Raptors,115.896713,107.9288688,223.8255819,1.93,217.5,6.325581871,Over,,
-6,SAS,San Antonio Spurs,BKN,Brooklyn Nets,106.7283999,111.5561167,218.2845166,1.91,218,0.284516581,Over,,
-7,WAS,Washington Wizards,BOS,Boston Celtics,112.0974145,125.1901223,237.2875367,1.91,229,8.287536707,Over,,
+"","HomeAbbrv","home_team","AwayAbbrv","away_team","HomeScore","AwayScore","total_pred","line","outcomes_point","Line_Pred_diff","Bet_Over_Under"
+"1","DAL","Dallas Mavericks","DEN","Denver Nuggets",113.844588241875,119.714545587033,233.559133828908,1.89,229,4.55913382890776,"Over"
+"2","DET","Detroit Pistons","MIA","Miami Heat",96.99606856575,105.770634306664,202.766702872414,1.93,214,11.2332971275856,"Under"
+"3","LAC","Los Angeles Clippers","ATL","Atlanta Hawks",99.4329750778509,91.7900319788921,191.223007056743,1.89,221,29.776992943257,"Under"
+"4","MIL","Milwaukee Bucks","PHX","Phoenix Suns",115.820332087618,116.904389878279,232.724721965897,1.93,229,3.72472196589734,"Over"
+"5","ORL","Orlando Magic","TOR","Toronto Raptors",112.37250509516,104.277828246244,216.650333341404,1.93,217.5,0.84966665859551,"Under"
+"6","SAS","San Antonio Spurs","BKN","Brooklyn Nets",107.871584585397,112.223983472728,220.095568058125,1.91,218,2.09556805812451,"Over"
+"7","WAS","Washington Wizards","BOS","Boston Celtics",116.730467038237,129.15188162663,245.882348664867,1.91,229,16.882348664867,"Over"
